@@ -1,0 +1,23 @@
+Mounting Volume into pod and container
+
+- create a secret file
+change a sentence into encypted base64 format
+~ echo -n "Miles to go before you sleep" | base64
+store into secret file
+    ~ kubectl apply -f secret-file.yaml
+
+- create a config(configmap) file that contains configuration and urls
+    ~ kubectl apply -f config-file.yaml
+
+- create a mosquitto DEPLOYMENT yaml file - mosquitto.yaml
+    ~ kubectl apply -f mosquitto.yaml
+
+Now,
+    ~ kubectl get pods
+    Go inside the pod
+        ~ kubectl exec -it {pod-name} -- /bin/sh
+
+    Check for file cat /mosquitto/config/config-file
+                   cat /mosquitto/config/secret-file
+
+ConfigMap and secret are local volume types.

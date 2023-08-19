@@ -39,4 +39,3 @@
 ##### copy config.json file from Minikube to my host
 
     scp -i $(minikube ssh-key) docker@$(minikube ip):.docker/config.json .docker/config.json
-

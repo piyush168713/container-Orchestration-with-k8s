@@ -33,4 +33,4 @@ shippingservice-6ccc89f8fd-v686r         1/1     Running   0          2m58s
 
 ## Architecture
 
-<img align="right" height="250" width="375" alt="" src="architecture-diagram.png"/>
+<img src="architecture-diagram.png"/>

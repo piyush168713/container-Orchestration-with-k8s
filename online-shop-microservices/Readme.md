@@ -33,4 +33,4 @@ shippingservice-6ccc89f8fd-v686r         1/1     Running   0          2m58s
 
 ## Architecture
 
-[Architecture of microservices](architecture-diagram.png)](architecture-diagram.png)
+[![Architecture of microservices](architecture-diagram.png)](architecture-diagram.png)
